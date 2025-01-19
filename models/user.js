@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     name: {
         type: String,
         required: [true, "Please enter your name"],
-        maxlength: [30, "Your name cannot exceed 30 characters"]
+        maxlength: [30, "Your name cannot exceed 30 characters"] 
 
     },
     email: {

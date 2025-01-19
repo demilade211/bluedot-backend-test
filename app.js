@@ -6,6 +6,7 @@ import products from "./routes/product.js"
 import category from "./routes/category.js"    
 import cors from "cors"; 
 import fileUpload from "express-fileupload"
+import guest from "./routes/guest.js"
 
 
 
@@ -23,6 +24,7 @@ app.use(fileUpload({
 app.use('/api/v1',auth); 
 app.use('/api/v1',products); 
 app.use('/api/v1',category); 
+app.use('/api/v1/guest',guest); 
 
 
 //Middleware to handle errors
